@@ -34,7 +34,7 @@ class ProfilePage extends StatelessWidget {
                 const SnackBar(content: Text("Sedang dalam pengembangan")),
               );
             },
-            icon: Icon(Icons.settings),
+            icon: Icon(Icons.settings, color: Colors.blueAccent),
           ),
         ],
       ),
