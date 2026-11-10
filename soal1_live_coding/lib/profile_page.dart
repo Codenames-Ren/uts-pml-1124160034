@@ -27,7 +27,35 @@ class ProfilePage extends StatelessWidget {
             padding: EdgeInsetsGeometry.symmetric(),
             child: Column(
               children: [
-                CircleAvatar(radius: 50, child: Icon(Icons.person, size: 50)),
+                CircleAvatar(
+                  radius: 50,
+                  foregroundColor: Colors.white,
+                  backgroundColor: Colors.blue,
+                  child: Icon(Icons.person, size: 50),
+                ),
+
+                const SizedBox(height: 16),
+
+                Text(
+                  "Bayu Sukma",
+                  style: Theme.of(context).textTheme.headlineSmall,
+                ),
+
+                const SizedBox(height: 5),
+
+                Text(
+                  "NIM: 1124160034",
+                  style: Theme.of(context).textTheme.bodyMedium,
+                ),
+
+                const SizedBox(height: 5),
+
+                Text(
+                  "Prodi: Teknik Informatika - Software Engineering",
+                  style: Theme.of(context).textTheme.bodyMedium,
+                ),
+
+                const SizedBox(height: 16),
               ],
             ),
           ),
