@@ -158,7 +158,7 @@ class ProfilePage extends StatelessWidget {
             ),
           );
         },
-        child: Icon(Icons.favorite),
+        child: Icon(Icons.favorite, color: Colors.blueAccent),
       ),
     );
   }
