@@ -73,7 +73,7 @@ class ProfilePage extends StatelessWidget {
                   style: Theme.of(context).textTheme.bodyMedium,
                 ),
 
-                const SizedBox(height: 16),
+                const SizedBox(height: 18),
 
                 Padding(
                   padding: EdgeInsets.all(16),
