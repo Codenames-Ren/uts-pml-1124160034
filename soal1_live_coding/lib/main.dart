@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:soal1_live_coding/profile_page.dart';
 
 void main() {
   runApp(MyApp());
