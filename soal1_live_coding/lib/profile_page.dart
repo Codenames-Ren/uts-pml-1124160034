@@ -74,10 +74,91 @@ class ProfilePage extends StatelessWidget {
                 ),
 
                 const SizedBox(height: 16),
+
+                Padding(
+                  padding: EdgeInsets.all(16),
+
+                  child: Column(
+                    children: [
+                      const Card(
+                        child: InfoTile(
+                          icon: Icon(Icons.email),
+                          label: "Email",
+                          value: "1124160034@global.ac.id",
+                        ),
+                      ),
+
+                      const Card(
+                        child: InfoTile(
+                          icon: Icon(Icons.phone),
+                          label: "Phone",
+                          value: "08881785876",
+                        ),
+                      ),
+                      const Card(
+                        child: InfoTile(
+                          icon: Icon(Icons.school),
+                          label: "Kelas",
+                          value: "TI 24 SE-3",
+                        ),
+                      ),
+
+                      const Card(
+                        child: InfoTile(
+                          icon: Icon(Icons.code_off),
+                          label: "Github",
+                          value: "Codenames-Ren",
+                        ),
+                      ),
+
+                      const SizedBox(height: 16),
+
+                      Align(
+                        alignment: AlignmentGeometry.centerLeft,
+                        child: Text("Hobi & Keahlian"),
+                      ),
+
+                      const SizedBox(height: 16),
+
+                      const Card(
+                        child: InfoTile(
+                          icon: Icon(Icons.code),
+                          label: "Codings",
+                          value: "Go & React Natives",
+                        ),
+                      ),
+                      const Card(
+                        child: InfoTile(
+                          icon: Icon(Icons.games),
+                          label: "Gaming",
+                          value: "RPG Games",
+                        ),
+                      ),
+                      const Card(
+                        child: InfoTile(
+                          icon: Icon(Icons.coffee),
+                          label: "Lazy",
+                          value: "Drinking Coffee~",
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
               ],
             ),
           ),
         ),
+      ),
+
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(
+              content: Text("Terima kasih sudah mengunjungi profil saya~"),
+            ),
+          );
+        },
+        child: Icon(Icons.favorite),
       ),
     );
   }
