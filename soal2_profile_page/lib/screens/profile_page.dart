@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:soal2_profile_page/models/profile.dart';
+import 'package:soal2_profile_page/widgets/info_tile.dart';
 
 class ProfilePage extends StatefulWidget {
   const new({super.key});
@@ -53,6 +54,11 @@ class _ProfilePageState extends State<ProfilePage> {
             textAlign: TextAlign.center,
             style: const TextStyle(fontStyle: FontStyle.italic),
           ),
+
+          const SizedBox(height: 16),
+          InfoTile(icon: Icons.email, title: "Email", value: p.email),
+          InfoTile(icon: Icons.phone, title: "Phone", value: p.phone),
+          InfoTile(icon: Icons.code_off, title: "Github", value: p.github),
         ],
       ),
     );
