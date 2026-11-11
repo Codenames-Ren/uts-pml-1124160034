@@ -1,5 +1,6 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
+import 'screens/login_page.dart';
 
 void main() {
   runApp(MainApp());
@@ -39,8 +40,12 @@ class _MainAppState extends State<MainApp> {
       initialRoute: "/",
       routes: {
         "/": (context) {
+          return const LoginPage();
+        },
+
+        "/home": (context) {
           return Scaffold(
-            appBar: AppBar(title: const Text("Profile Mahasiswa")),
+            appBar: AppBar(title: const Text("WIP")),
             body: Center(
               child: Switch(
                 value: _mode == ThemeMode.dark,
