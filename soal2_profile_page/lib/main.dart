@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:soal2_profile_page/screens/profile_page.dart';
 
 import 'screens/login_page.dart';
 
@@ -44,17 +45,7 @@ class _MainAppState extends State<MainApp> {
         },
 
         "/home": (context) {
-          return Scaffold(
-            appBar: AppBar(title: const Text("WIP")),
-            body: Center(
-              child: Switch(
-                value: _mode == ThemeMode.dark,
-                onChanged: (value) {
-                  _toggleTheme(value);
-                },
-              ),
-            ),
-          );
+          return const ProfilePage();
         },
       },
     );
