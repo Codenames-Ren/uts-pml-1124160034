@@ -8,21 +8,22 @@ void main() {
 }
 
 class MainApp extends StatefulWidget {
-  const new({super.key});
+  const MainApp({super.key});
 
   @override
   State<MainApp> createState() => _MainAppState();
 }
 
 class _MainAppState extends State<MainApp> {
-  ThemeMode _mode = ThemeMode.light;
+  ThemeMode _mode = ThemeMode.system;
 
   void _toggleTheme(bool dark) {
     setState(() {
       if (dark) {
         _mode = ThemeMode.dark;
+      } else {
+        _mode = ThemeMode.light;
       }
-      _mode = ThemeMode.light;
     });
   }
 
@@ -33,9 +34,20 @@ class _MainAppState extends State<MainApp> {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         useMaterial3: true,
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blueAccent),
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: Colors.blueAccent,
+          brightness: Brightness.light,
+        ),
       ),
-      darkTheme: ThemeData(useMaterial3: true, brightness: Brightness.dark),
+
+      darkTheme: ThemeData(
+        useMaterial3: true,
+        brightness: Brightness.dark,
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: Colors.blue,
+          brightness: Brightness.dark,
+        ),
+      ),
 
       themeMode: _mode,
       initialRoute: "/",
@@ -45,7 +57,9 @@ class _MainAppState extends State<MainApp> {
         },
 
         "/home": (context) {
-          return const ProfilePage();
+          bool dark = Theme.of(context).brightness == Brightness.dark;
+
+          return ProfilePage(isDark: dark, onThemeChanged: _toggleTheme);
         },
       },
     );

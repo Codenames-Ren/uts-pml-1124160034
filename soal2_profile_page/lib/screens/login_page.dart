@@ -70,7 +70,7 @@ class _LoginPageState extends State<LoginPage> {
                 const SizedBox(height: 8),
 
                 Text(
-                  "Login",
+                  "Portal Login Mahasiswa",
                   style: Theme.of(context).textTheme.headlineMedium,
                 ),
 

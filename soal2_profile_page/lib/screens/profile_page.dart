@@ -3,7 +3,14 @@ import 'package:soal2_profile_page/models/profile.dart';
 import 'package:soal2_profile_page/widgets/info_tile.dart';
 
 class ProfilePage extends StatefulWidget {
-  const new({super.key});
+  final bool isDark;
+  final ValueChanged<bool> onThemeChanged;
+
+  const ProfilePage({
+    super.key,
+    required this.isDark,
+    required this.onThemeChanged,
+  });
 
   @override
   State<ProfilePage> createState() => _ProfilePageState();
@@ -26,7 +33,19 @@ class _ProfilePageState extends State<ProfilePage> {
     final p = _profile;
 
     return Scaffold(
-      appBar: AppBar(title: const Text("Profile Mahasiswa")),
+      appBar: AppBar(
+        title: const Text("Profile Mahasiswa"),
+        centerTitle: true,
+        actions: [
+          IconButton(
+            tooltip: "Dark Mode",
+            icon: Icon(widget.isDark ? Icons.light_mode : Icons.dark_mode),
+            onPressed: () {
+              widget.onThemeChanged(!widget.isDark);
+            },
+          ),
+        ],
+      ),
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
