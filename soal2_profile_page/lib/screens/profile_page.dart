@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:soal2_profile_page/models/profile.dart';
+import 'package:soal2_profile_page/screens/edit_profile_page.dart';
 import 'package:soal2_profile_page/widgets/info_tile.dart';
 
 class ProfilePage extends StatefulWidget {
@@ -79,6 +80,20 @@ class _ProfilePageState extends State<ProfilePage> {
           InfoTile(icon: Icons.phone, title: "Phone", value: p.phone),
           InfoTile(icon: Icons.code_off, title: "Github", value: p.github),
         ],
+      ),
+
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) {
+                return EditProfilePage(profile: _profile);
+              },
+            ),
+          );
+        },
+        child: const Icon(Icons.edit),
       ),
     );
   }
