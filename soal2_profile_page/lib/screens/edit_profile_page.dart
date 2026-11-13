@@ -39,11 +39,23 @@ class _EditProfilePageState extends State<EditProfilePage> {
     super.dispose();
   }
 
-  void _simpan() {
+  void _save() {
     if (!_formKey.currentState!.validate()) {
       return;
     }
-    Navigator.pop(context);
+
+    final newData = Profile(
+      name: _nameCtrl.text.trim(),
+      nim: widget.profile.nim,
+      prodi: widget.profile.prodi,
+      kelas: widget.profile.kelas,
+      bio: _bioCtrl.text.trim(),
+      email: _emailCtrl.text.trim(),
+      phone: _phoneCtrl.text.trim(),
+      github: _githubCtrl.text.trim(),
+    );
+
+    Navigator.pop(context, newData);
   }
 
   @override
@@ -136,7 +148,7 @@ class _EditProfilePageState extends State<EditProfilePage> {
                 width: double.infinity,
                 height: 48,
                 child: FilledButton.icon(
-                  onPressed: _simpan,
+                  onPressed: _save,
                   icon: const Icon(Icons.save),
                   label: const Text("Simpan"),
                 ),

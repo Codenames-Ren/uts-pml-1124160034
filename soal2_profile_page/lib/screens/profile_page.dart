@@ -18,7 +18,7 @@ class ProfilePage extends StatefulWidget {
 }
 
 class _ProfilePageState extends State<ProfilePage> {
-  final Profile _profile = const Profile(
+  Profile _profile = const Profile(
     name: "Bayu Sukma",
     nim: "1124160034",
     prodi: "Teknik Informatika",
@@ -83,8 +83,8 @@ class _ProfilePageState extends State<ProfilePage> {
       ),
 
       floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          Navigator.push(
+        onPressed: () async {
+          final Profile? hasil = await Navigator.push<Profile>(
             context,
             MaterialPageRoute(
               builder: (context) {
@@ -92,6 +92,12 @@ class _ProfilePageState extends State<ProfilePage> {
               },
             ),
           );
+
+          if (hasil != null) {
+            setState(() {
+              _profile = hasil;
+            });
+          }
         },
         child: const Icon(Icons.edit),
       ),
