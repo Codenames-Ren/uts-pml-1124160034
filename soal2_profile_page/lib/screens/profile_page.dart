@@ -47,6 +47,56 @@ class _ProfilePageState extends State<ProfilePage> {
           ),
         ],
       ),
+
+      drawer: Drawer(
+        child: ListView(
+          children: [
+            DrawerHeader(
+              decoration: BoxDecoration(
+                color: Theme.of(context).colorScheme.primaryContainer,
+              ),
+
+              child: Align(
+                alignment: Alignment.bottomLeft,
+                child: Text(
+                  p.name,
+                  style: Theme.of(context).textTheme.titleLarge,
+                ),
+              ),
+            ),
+
+            ListTile(
+              leading: const Icon(Icons.person),
+              title: const Text("Profile Bayu"),
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
+
+            SwitchListTile(
+              secondary: const Icon(Icons.dark_mode),
+              title: const Text("Dark Mode"),
+              value: widget.isDark,
+              onChanged: (value) {
+                widget.onThemeChanged(value);
+              },
+            ),
+
+            ListTile(
+              leading: const Icon(Icons.logout),
+              title: const Text("Exit"),
+              onTap: () {
+                Navigator.pushNamedAndRemoveUntil(
+                  context,
+                  "/",
+                  (route) => false,
+                );
+              },
+            ),
+          ],
+        ),
+      ),
+
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
