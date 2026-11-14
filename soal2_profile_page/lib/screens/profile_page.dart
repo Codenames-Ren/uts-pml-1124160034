@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:soal2_profile_page/models/profile.dart';
 import 'package:soal2_profile_page/screens/edit_profile_page.dart';
 import 'package:soal2_profile_page/widgets/info_tile.dart';
+import 'package:soal2_profile_page/widgets/profile_stat.dart';
 
 class ProfilePage extends StatefulWidget {
   final bool isDark;
@@ -73,6 +74,15 @@ class _ProfilePageState extends State<ProfilePage> {
               },
             ),
 
+            ListTile(
+              leading: const Icon(Icons.info),
+              title: const Text("About Me"),
+              onTap: () {
+                Navigator.pop(context);
+                Navigator.pushNamed(context, "/about");
+              },
+            ),
+
             SwitchListTile(
               secondary: const Icon(Icons.dark_mode),
               title: const Text("Dark Mode"),
@@ -123,6 +133,17 @@ class _ProfilePageState extends State<ProfilePage> {
             p.bio,
             textAlign: TextAlign.center,
             style: const TextStyle(fontStyle: FontStyle.italic),
+          ),
+
+          const SizedBox(height: 12),
+          Container(
+            padding: const EdgeInsets.symmetric(vertical: 8),
+            decoration: BoxDecoration(borderRadius: BorderRadius.circular(12)),
+
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [ProfileStat()],
+            ),
           ),
 
           const SizedBox(height: 16),
