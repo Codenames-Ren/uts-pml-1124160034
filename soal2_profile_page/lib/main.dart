@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:soal2_profile_page/screens/about_page.dart';
 import 'package:soal2_profile_page/screens/profile_page.dart';
 
 import 'screens/login_page.dart';
@@ -30,7 +31,7 @@ class _MainAppState extends State<MainApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "Profil Bayu Sukma",
+      title: "Profil Bayu",
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         useMaterial3: true,
@@ -60,6 +61,10 @@ class _MainAppState extends State<MainApp> {
           bool dark = Theme.of(context).brightness == Brightness.dark;
 
           return ProfilePage(isDark: dark, onThemeChanged: _toggleTheme);
+        },
+
+        "/about": (context) {
+          return const AboutMe();
         },
       },
     );
