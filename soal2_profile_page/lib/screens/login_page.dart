@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatefulWidget {
-  const new({super.key});
+  const LoginPage({super.key});
 
   @override
   State<LoginPage> createState() => _LoginPageState();
@@ -41,14 +41,15 @@ class _LoginPageState extends State<LoginPage> {
 
     if (_userCtrl.text == _user && _passCtrl.text == _pass) {
       Navigator.pushReplacementNamed(context, "/home");
-    }
-    setState(() {
-      _loading = false;
-    });
+    } else {
+      setState(() {
+        _loading = false;
+      });
 
-    ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(content: Text("Username atau Password Salah!")),
-    );
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text("Username atau Password Salah!")),
+      );
+    }
   }
 
   @override
@@ -79,7 +80,7 @@ class _LoginPageState extends State<LoginPage> {
                 TextFormField(
                   controller: _userCtrl,
                   decoration: const InputDecoration(
-                    labelText: "Usename",
+                    labelText: "Username",
                     prefixIcon: Icon(Icons.person),
                     border: OutlineInputBorder(),
                   ),
