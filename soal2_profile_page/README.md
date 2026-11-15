@@ -27,12 +27,14 @@ Work on Progress.
 <p align="center"><strong>Profile & Edit Profile</strong></p>
 <p align="center">
   <img src="assets/screenshots/ss3.png" width="280" alt="profile Page"/>
+  &nbsp;&nbsp;&nbsp;&nbsp;
     <img src="assets/screenshots/ss4.png" width="280" alt="Edit Profile Section"/>
 </p>
 
 <p align="center"><strong>Drawer List & About Page</strong></p>
 <p align="center">
   <img src="assets/screenshots/ss5.png" width="280" alt="Drawer List"/>
+  &nbsp;&nbsp;&nbsp;&nbsp;
     <img src="assets/screenshots/ss6.png" width="280" alt="About Page"/>
 </p>
 
