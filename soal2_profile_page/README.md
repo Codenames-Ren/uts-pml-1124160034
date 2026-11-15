@@ -19,9 +19,30 @@ Work on Progress.
 
 ## Screenshot
 
-| Login                                | Profil                                | Edit Profil                                |
-| ------------------------------------ | ------------------------------------- | ------------------------------------------ | ------------------------------------- | --------------------------------------- |
-| ![Login](assets/screenshots/ss2.png) | ![Profil](assets/screenshots/ss3.png) | ![Edit Profil](assets/screenshots/ss4.png) | ![Drawer](assets/screenshots/ss5.png) | ![About Me](assets/screenshots/ss6.png) |
+<p align="center"><strong>Login</strong></p>
+<p align="center">
+  <img src="assets/screenshots/ss2.png" width="280" alt="Login Page"/>
+</p>
+
+<p align="center"><strong>Profile</strong></p>
+<p align="center">
+  <img src="assets/screenshots/ss3.png" width="280" alt="profile Page"/>
+</p>
+
+<p align="center"><strong>Edit Profle</strong></p>
+<p align="center">
+  <img src="assets/screenshots/ss4.png" width="280" alt="Edit Profile Section"/>
+</p>
+
+<p align="center"><strong>Drawer</strong></p>
+<p align="center">
+  <img src="assets/screenshots/ss5.png" width="280" alt="Drawer List"/>
+</p>
+
+<p align="center"><strong>About Page</strong></p>
+<p align="center">
+  <img src="assets/screenshots/ss6.png" width="280" alt="About Page"/>
+</p>
 
 ## Fitur
 
