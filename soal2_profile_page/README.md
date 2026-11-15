@@ -24,24 +24,16 @@ Work on Progress.
   <img src="assets/screenshots/ss2.png" width="280" alt="Login Page"/>
 </p>
 
-<p align="center"><strong>Profile</strong></p>
+<p align="center"><strong>Profile & Edit Profile</strong></p>
 <p align="center">
   <img src="assets/screenshots/ss3.png" width="280" alt="profile Page"/>
+    <img src="assets/screenshots/ss4.png" width="280" alt="Edit Profile Section"/>
 </p>
 
-<p align="center"><strong>Edit Profle</strong></p>
-<p align="center">
-  <img src="assets/screenshots/ss4.png" width="280" alt="Edit Profile Section"/>
-</p>
-
-<p align="center"><strong>Drawer</strong></p>
+<p align="center"><strong>Drawer List & About Page</strong></p>
 <p align="center">
   <img src="assets/screenshots/ss5.png" width="280" alt="Drawer List"/>
-</p>
-
-<p align="center"><strong>About Page</strong></p>
-<p align="center">
-  <img src="assets/screenshots/ss6.png" width="280" alt="About Page"/>
+    <img src="assets/screenshots/ss6.png" width="280" alt="About Page"/>
 </p>
 
 ## Fitur
