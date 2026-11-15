@@ -19,9 +19,9 @@ Work on Progress.
 
 ## Screenshot
 
-| Login                         | Profil                         | Edit Profil                         |
-| ----------------------------- | ------------------------------ | ----------------------------------- | ------------------------------ | -------------------------------- |
-| ![Login](screenshots/ss2.png) | ![Profil](screenshots/ss3.png) | ![Edit Profil](screenshots/ss4.png) | ![Drawer](screenshots/ss5.png) | ![About Me](screenshots/ss6.png) |
+| Login                                | Profil                                | Edit Profil                                |
+| ------------------------------------ | ------------------------------------- | ------------------------------------------ | ------------------------------------- | --------------------------------------- |
+| ![Login](assets/screenshots/ss2.png) | ![Profil](assets/screenshots/ss3.png) | ![Edit Profil](assets/screenshots/ss4.png) | ![Drawer](assets/screenshots/ss5.png) | ![About Me](assets/screenshots/ss6.png) |
 
 ## Fitur
 
