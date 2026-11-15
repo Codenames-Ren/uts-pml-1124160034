@@ -19,11 +19,9 @@ Work on Progress.
 
 ## Screenshot
 
-Work on Progress.
-
-<!-- | Login | Profil | Edit Profil |
-|-------|--------|-------------|
-| ![Login](screenshots/login.png) | ![Profil](screenshots/profile.png) | ![Edit Profil](screenshots/edit_profile.png) | -->
+| Login                         | Profil                         | Edit Profil                         |
+| ----------------------------- | ------------------------------ | ----------------------------------- | ------------------------------ | -------------------------------- |
+| ![Login](screenshots/ss2.png) | ![Profil](screenshots/ss3.png) | ![Edit Profil](screenshots/ss4.png) | ![Drawer](screenshots/ss5.png) | ![About Me](screenshots/ss6.png) |
 
 ## Fitur
 
