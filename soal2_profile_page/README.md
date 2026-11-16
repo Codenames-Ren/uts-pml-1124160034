@@ -13,7 +13,7 @@ Aplikasi Flutter Android yang menampilkan profil diri, dibuat untuk
 
 ## Video Presentasi
 
-Work on Progress.
+Youtube : https://youtu.be/JF2KPoGVAoc
 
 <!-- YouTube: https://youtu.be/XXXXXXXXXXX -->
 
